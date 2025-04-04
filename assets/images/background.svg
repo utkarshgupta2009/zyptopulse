@@ -1,0 +1,30 @@
+<svg width="414" height="896" viewBox="0 0 414 896" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M300 23L331.5 54.5L352 25.5V-29L300 23Z" stroke="#212931" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="331" cy="55" r="3" fill="#212931"/>
+<circle cx="353" cy="25" r="3" fill="#212931"/>
+<circle cx="300" cy="23" r="3" fill="#212931"/>
+<path d="M397 461L444 488L386.689 507.98L397 569L350 542V488L397 461Z" stroke="#212931" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="397" cy="462" r="3" fill="#212931"/>
+<circle cx="388" cy="508" r="3" fill="#212931"/>
+<circle cx="397" cy="568" r="3" fill="#212931"/>
+<circle cx="350" cy="542" r="3" fill="#212931"/>
+<circle cx="350" cy="488" r="3" fill="#212931"/>
+<circle cx="72.4754" cy="104.243" r="1.20298" transform="rotate(-90 72.4754 104.243)" fill="#212931"/>
+<circle cx="43.203" cy="147.951" r="1.20298" transform="rotate(-90 43.203 147.951)" fill="#212931"/>
+<circle cx="92.5251" cy="97.4257" r="1.20298" transform="rotate(-90 92.5251 97.4257)" fill="#212931"/>
+<circle cx="48.8169" cy="88.203" r="1.20298" transform="rotate(-90 48.8169 88.203)" fill="#212931"/>
+<circle cx="92.926" cy="117.475" r="1.20298" transform="rotate(-90 92.926 117.475)" fill="#212931"/>
+<path d="M93.1265 97.6262L72.6759 104.042M93.1265 97.6262L48.6164 88.2029M93.1265 97.6262L93.1265 117.074L72.6759 104.042M72.6759 104.042L43.203 147.75L48.6164 88.2029M72.6759 104.042L48.6164 88.2029" stroke="#212931" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="98.6624" cy="568.442" r="3" transform="rotate(40.9501 98.6624 568.442)" fill="#212931"/>
+<circle cx="95.4729" cy="593.478" r="3" transform="rotate(40.9501 95.4729 593.478)" fill="#212931"/>
+<circle cx="67.4153" cy="587.667" r="3" transform="rotate(40.9501 67.4153 587.667)" fill="#212931"/>
+<circle cx="52.8281" cy="631.941" r="3" transform="rotate(40.9501 52.8281 631.941)" fill="#212931"/>
+<path d="M68.1705 588.322L98.6624 568.441L95.8505 593.806M68.1705 588.322L95.8505 593.806M68.1705 588.322L52.2226 633.402L95.8505 593.806" stroke="#212931" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="0.000953674" y="592" width="414" height="304" fill="url(#paint0_linear_1_17782)"/>
+<defs>
+<linearGradient id="paint0_linear_1_17782" x1="207.001" y1="592" x2="207.001" y2="896" gradientUnits="userSpaceOnUse">
+<stop stop-color="#161C22" stop-opacity="0"/>
+<stop offset="1" stop-color="#161C22"/>
+</linearGradient>
+</defs>
+</svg>
