@@ -1,11 +1,11 @@
-// lib/services/auth_service.dart
 import 'dart:convert';
 import 'dart:developer';
 import 'package:http/http.dart' as http;
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class AuthService {
-  final String _baseUrl = 'https://api.fluttercrypto.agpro.co.in';
+  final String _baseUrl = dotenv.get("DIRECTUS_API__URL");
   final FlutterSecureStorage _secureStorage = const FlutterSecureStorage();
 
   Future<void> signUp(String email, String password, String firstName) async {
@@ -26,7 +26,9 @@ class AuthService {
 
       log(response.body);
 
-      if (response.statusCode == 200 || response.statusCode == 201||response.statusCode == 204 ) {
+      if (response.statusCode == 200 ||
+          response.statusCode == 201 ||
+          response.statusCode == 204) {
         return;
       } else {
         // Throw an exception with the error message from the API

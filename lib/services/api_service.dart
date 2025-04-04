@@ -1,15 +1,16 @@
 // lib/services/api_service.dart
 import 'dart:convert';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import '../models/crypto_model.dart';
 
 class ApiService {
-  final String _baseUrl = 'https://api.coingecko.com/api/v3';
+  final String _baseUrl = dotenv.get("CRYPTO_DATA_URL");
 
   Future<List<CryptoModel>> getCryptoList() async {
     try {
-      final uri = Uri.parse('$_baseUrl/coins/markets')
-          .replace(queryParameters: {
+      final uri =
+          Uri.parse('$_baseUrl/coins/markets').replace(queryParameters: {
         'vs_currency': 'usd',
         'order': 'market_cap_desc',
         'per_page': '20',
