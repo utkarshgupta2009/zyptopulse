@@ -1,4 +1,4 @@
-// lib/screens/auth_screen.dart
+ 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:zyptopulse/gen/assets.gen.dart';
@@ -74,7 +74,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   ),
                   child: Row(
                     children: [
-                      // Sign In Tab
+                       
                       Expanded(
                         child: GestureDetector(
                           onTap: () {
@@ -90,7 +90,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                             decoration: BoxDecoration(
                               color: _currentPage == 0
                                   ? theme.scaffoldBackgroundColor
-                                  : theme.cardColor, // Ensure visibility
+                                  : theme.cardColor, 
                               borderRadius: BorderRadius.circular(
                                   UIConstants.cardBorderRadius),
                             ),

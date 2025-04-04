@@ -21,7 +21,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
   }
 
   Future<void> _checkAuth() async {
-    // Simulate a delay for the splash screen
+      
     await Future.delayed(const Duration(seconds: 2));
 
     final isAuthenticated =

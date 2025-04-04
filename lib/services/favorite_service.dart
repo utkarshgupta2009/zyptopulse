@@ -1,11 +1,12 @@
-// lib/services/favorite_service.dart
+  
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../models/favorite_model.dart';
 import 'auth_service.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class FavoriteService {
-  final String _baseUrl = 'https://api.fluttercrypto.agpro.co.in';
+  final String _baseUrl = dotenv.get("DIRECTUS_API__URL");
   final AuthService _authService = AuthService();
 
   Future<List<FavoriteModel>> getFavorites() async {

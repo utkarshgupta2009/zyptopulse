@@ -1,4 +1,3 @@
-// lib/models/favorite_model.dart
 class FavoriteModel {
   final String id;
   final String name;

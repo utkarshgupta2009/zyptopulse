@@ -56,7 +56,6 @@ class Favorites extends _$Favorites {
       crypto.imageUrl,
     );
     ref.invalidateSelf();
-    // Also invalidate the favorites details provider
     ref.invalidate(favoritesDetailsProvider);
   }
 
@@ -64,7 +63,6 @@ class Favorites extends _$Favorites {
     final favoriteService = ref.read(favoriteServiceProvider);
     await favoriteService.removeFavorite(id);
     ref.invalidateSelf();
-    // Also invalidate the favorites details provider
     ref.invalidate(favoritesDetailsProvider);
   }
 }
@@ -75,14 +73,12 @@ Future<List<FavoriteModel>> favoritesDetails(FavoritesDetailsRef ref) async {
   return await favoriteService.getFavorites();
 }
 
-// Add a provider to check if a specific crypto is favorited
 @riverpod
 Future<bool> isFavorite(IsFavoriteRef ref, String cryptoName) async {
   final favorites = await ref.watch(favoritesProvider.future);
   return favorites.contains(cryptoName);
 }
 
-// Add a provider to get the favorite id by crypto name (useful for removal)
 @riverpod
 Future<String?> favoriteId(FavoriteIdRef ref, String cryptoName) async {
   final favorites = await ref.watch(favoritesDetailsProvider.future);

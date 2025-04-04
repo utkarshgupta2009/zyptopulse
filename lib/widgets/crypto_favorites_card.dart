@@ -20,9 +20,9 @@ class CryptoFavoritesCard extends ConsumerWidget {
     final String priceChange =
         favorite.priceChangePercentage24h.toStringAsFixed(2);
 
-    // Format date for display (assuming you have a timestamp field or can add one)
+      
     final String formattedDate =
-        "2021-08-02 04:39:26"; // Replace with actual date formatting if available
+        "2021-08-02 04:39:26";   
 
     return Container(
       margin: const EdgeInsets.only(bottom: 1),
@@ -35,7 +35,7 @@ class CryptoFavoritesCard extends ConsumerWidget {
               children: [
                 CustomSlidableAction(
                   onPressed: (context) async {
-                    // Show confirmation dialog
+                      
                     final shouldDelete = await showDialog<bool>(
                           context: context,
                           builder: (context) => AlertDialog(
@@ -111,7 +111,7 @@ class CryptoFavoritesCard extends ConsumerWidget {
               children: [
                 Row(
                   children: [
-                    // Crypto logo
+                      
                     ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.network(
@@ -141,7 +141,7 @@ class CryptoFavoritesCard extends ConsumerWidget {
                     ),
                     const SizedBox(width: 12),
 
-                    // Crypto symbol
+                      
                     Text(
                       favorite.symbol.toUpperCase(),
                       style: const TextStyle(
@@ -153,12 +153,12 @@ class CryptoFavoritesCard extends ConsumerWidget {
 
                     const Spacer(),
 
-                    // Timestamp
+                      
                     Text(formattedDate, style: theme.textTheme.bodySmall),
 
                     const SizedBox(width: 8),
 
-                    // Chevron icon
+                      
                     const Icon(
                       Icons.chevron_right,
                       color: Color(0xFF8A8D93),
@@ -167,7 +167,7 @@ class CryptoFavoritesCard extends ConsumerWidget {
                   ],
                 ),
 
-                // Market Cap Rank
+                  
                 Row(
                   children: [
                     const SizedBox(width: 52),
@@ -179,7 +179,7 @@ class CryptoFavoritesCard extends ConsumerWidget {
                   ],
                 ),
 
-                // Price
+                  
                 Row(
                   children: [
                     const SizedBox(width: 52),
@@ -195,7 +195,7 @@ class CryptoFavoritesCard extends ConsumerWidget {
                   ],
                 ),
 
-                // Price Change Percentage 24h
+                  
                 Row(
                   children: [
                     const SizedBox(width: 52),

@@ -15,7 +15,7 @@ class AboutUsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Header Section
+              
             Text(
               'Welcome to Weframe Tech',
               style: TextStyle(
@@ -30,7 +30,7 @@ class AboutUsScreen extends StatelessWidget {
             ),
             SizedBox(height: 16.0),
 
-            // Mission Statement
+              
             Text(
               'Our Mission',
               style: TextStyle(
@@ -45,7 +45,7 @@ class AboutUsScreen extends StatelessWidget {
             ),
             SizedBox(height: 16.0),
 
-            // Journey Section
+              
             Text(
               'Our Journey',
               style: TextStyle(
@@ -65,7 +65,7 @@ class AboutUsScreen extends StatelessWidget {
             ),
             SizedBox(height: 16.0),
 
-            // Expertise Section
+              
             Text(
               'Expertise & Achievements',
               style: TextStyle(
@@ -85,7 +85,7 @@ class AboutUsScreen extends StatelessWidget {
             ),
             SizedBox(height: 16.0),
 
-            // Footer Section
+              
             Divider(),
             Center(
               child: Column(

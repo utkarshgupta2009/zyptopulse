@@ -1,4 +1,4 @@
-// lib/screens/login_page.dart
+ 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -33,18 +33,18 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
       });
   
       try {
-        // Attempt to sign in
+         
         await ref.read(authProvider.notifier).signIn(
               _emailController.text.trim(),
               _passwordController.text,
             );
   
-        // If sign-in succeeds, navigate to the main screen
+         
         if (mounted) {
           context.go('/main');
         }
       } catch (e) {
-        // Handle error
+         
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Error: ${e..toString()}')),

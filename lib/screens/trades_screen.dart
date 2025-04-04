@@ -1,4 +1,4 @@
-// lib/screens/trades_screen.dart
+  
 import 'package:flutter/material.dart';
 
 class TradesScreen extends StatelessWidget {

@@ -21,8 +21,8 @@ class OnboardingScreen extends ConsumerWidget {
             decoration: BoxDecoration(
               gradient: RadialGradient(
                 center:
-                    Alignment.topLeft, // Position the gradient at the top-left
-                radius: 1, // Adjust the spread of the gradient
+                    Alignment.topLeft,   
+                radius: 1,   
                 colors: [
                   Theme.of(context)
                       .primaryColor
@@ -60,7 +60,7 @@ class OnboardingScreen extends ConsumerWidget {
                     ),
                   ),
                   onPressed: () {
-                    context.go('/main'); // Navigate to main screen
+                    context.go('/main');   
                   },
                   child: const Text(
                     'Get Started',

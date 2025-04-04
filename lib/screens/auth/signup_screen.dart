@@ -1,4 +1,4 @@
-// lib/screens/signup_page.dart
+  
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:zyptopulse/providers/auth_provider.dart';
@@ -35,19 +35,19 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
       });
   
       try {
-        // Attempt to sign up
+          
         await ref.read(authProvider.notifier).signUp(
               _emailController.text.trim(),
               _passwordController.text,
               _nameController.text.trim(),
             );
   
-        // If sign-up succeeds, navigate to the onboarding screen
+          
         if (mounted) {
           context.go('/onboarding');
         }
       } catch (e) {
-        // Handle error
+          
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Error: ${e.toString()}')),

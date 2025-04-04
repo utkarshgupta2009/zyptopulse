@@ -31,7 +31,7 @@ class AuthService {
           response.statusCode == 204) {
         return;
       } else {
-        // Throw an exception with the error message from the API
+          
         final error = jsonDecode(response.body)['errors'][0]['message'] ??
             'Unknown error';
         throw Exception('Failed to sign up: $error');
@@ -68,7 +68,7 @@ class AuthService {
         await _secureStorage.write(
             key: 'token_expiry', value: expiryDate.toIso8601String());
       } else {
-        // Throw an exception with the error message from the API
+          
         final error = jsonDecode(response.body)['errors'][0]['message'] ??
             'Unknown error';
         throw Exception('Failed to sign in: $error');
@@ -93,7 +93,7 @@ class AuthService {
   Future<bool> _isTokenExpired() async {
     final expiryString = await _secureStorage.read(key: 'token_expiry');
     if (expiryString == null) {
-      return true; // If no expiry is stored, assume the token is expired
+      return true;   
     }
 
     final DateTime expiryDate = DateTime.parse(expiryString);
@@ -104,7 +104,7 @@ class AuthService {
     String? token = await _secureStorage.read(key: 'access_token');
 
     if (token != null && await _isTokenExpired()) {
-      // Token is expired, attempt to refresh it
+        
       final email = await _secureStorage.read(key: 'user_email');
       final password = await _secureStorage.read(key: 'user_password');
 

@@ -1,4 +1,4 @@
-// lib/widgets/auth_tab_slider.dart
+  
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -25,7 +25,7 @@ class AuthTabSlider extends StatelessWidget {
       ),
       child: Row(
         children: [
-          // Sign In Tab
+            
           Expanded(
             child: GestureDetector(
               onTap: () {
@@ -57,7 +57,7 @@ class AuthTabSlider extends StatelessWidget {
             ),
           ),
           
-          // Sign Up Tab
+            
           Expanded(
             child: GestureDetector(
               onTap: () {

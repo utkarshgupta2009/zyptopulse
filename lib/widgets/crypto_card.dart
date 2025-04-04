@@ -89,7 +89,7 @@ class CryptoCard extends ConsumerWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // Crypto logo and name row
+                  
                 Flexible(
                   flex: 2,
                   child: Row(
@@ -123,7 +123,7 @@ class CryptoCard extends ConsumerWidget {
                       ),
                       const SizedBox(width: UIConstants.smallSpacing),
 
-                      // Crypto info
+                        
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,

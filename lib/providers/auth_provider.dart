@@ -1,4 +1,3 @@
-// lib/providers/auth_provider.dart
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../services/auth_service.dart';
 
@@ -30,9 +29,9 @@ class Auth extends _$Auth {
       await authService.signIn(email, password);
       state = const AsyncValue.data(true);
     } catch (e, stack) {
-      // Set the state to error with the exception
+      
       state = AsyncValue.error(e, stack);
-      rethrow; // Propagate the exception to the UI
+      rethrow; 
     }
   }
 
@@ -44,9 +43,9 @@ class Auth extends _$Auth {
       await authService.signUp(email, password, firstName);
       await signIn(email, password);
     } catch (e, stack) {
-      // Set the state to error with the exception
+      
       state = AsyncValue.error(e, stack);
-      rethrow; // Propagate the exception to the UI
+      rethrow; 
     }
   }
 

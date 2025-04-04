@@ -27,7 +27,7 @@ class SettingsScreen extends ConsumerWidget {
             title: 'Language',
             trailingText: 'English',
             onTap: () {
-              // Language settings
+                
             },
           ),
           _buildSettingsTile(

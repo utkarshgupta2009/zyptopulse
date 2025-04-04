@@ -18,16 +18,16 @@ class AppBottomNavBar extends StatelessWidget {
 
     return Padding(
       padding:
-          UIConstants.smallContentPadding, // Add padding around the nav bar
+          UIConstants.smallContentPadding,   
       child: Container(
         decoration: BoxDecoration(
-          color: theme.cardColor, // Background color of the nav bar
-          borderRadius: BorderRadius.circular(16), // Rounded corners
+          color: theme.cardColor,   
+          borderRadius: BorderRadius.circular(16),   
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.1), // Shadow color
-              blurRadius: 10, // Blur radius for the shadow
-              offset: const Offset(0, 4), // Shadow offset
+              color: Colors.black.withOpacity(0.1),   
+              blurRadius: 10,   
+              offset: const Offset(0, 4),   
             ),
           ],
         ),
@@ -43,10 +43,10 @@ class AppBottomNavBar extends StatelessWidget {
             onTap: onTap,
             type: BottomNavigationBarType.fixed,
             selectedItemColor:
-                const Color(0xff777777), // Keep text color constant
+                const Color(0xff777777),   
             unselectedItemColor: const Color(0xff777777),
-            backgroundColor: Colors.transparent, // Make background transparent
-            enableFeedback: false, // Disable splash effect
+            backgroundColor: Colors.transparent,   
+            enableFeedback: false,   
             items: [
               BottomNavigationBarItem(
                 icon: Container(
@@ -55,9 +55,9 @@ class AppBottomNavBar extends StatelessWidget {
                         ? [
                             BoxShadow(
                               color: theme.primaryColor.withOpacity(
-                                  0.37), // Use primary color with opacity
-                              blurRadius: 16, // Blur radius
-                              offset: const Offset(0, 5), // Shadow offset
+                                  0.37),   
+                              blurRadius: 16,   
+                              offset: const Offset(0, 5),   
                             ),
                           ]
                         : [],
@@ -77,9 +77,9 @@ class AppBottomNavBar extends StatelessWidget {
                         ? [
                             BoxShadow(
                               color: theme.primaryColor.withOpacity(
-                                  0.37), // Use primary color with opacity
-                              blurRadius: 16, // Blur radius
-                              offset: const Offset(0, 5), // Shadow offset
+                                  0.37),   
+                              blurRadius: 16,   
+                              offset: const Offset(0, 5),   
                             ),
                           ]
                         : [],
@@ -99,9 +99,9 @@ class AppBottomNavBar extends StatelessWidget {
                         ? [
                             BoxShadow(
                               color: theme.primaryColor.withOpacity(
-                                  0.37), // Use primary color with opacity
-                              blurRadius: 16, // Blur radius
-                              offset: const Offset(0, 5), // Shadow offset
+                                  0.37),   
+                              blurRadius: 16,   
+                              offset: const Offset(0, 5),   
                             ),
                           ]
                         : [],
@@ -121,9 +121,9 @@ class AppBottomNavBar extends StatelessWidget {
                         ? [
                             BoxShadow(
                               color: theme.primaryColor.withOpacity(
-                                  0.37), // Use primary color with opacity
-                              blurRadius: 16, // Blur radius
-                              offset: const Offset(0, 5), // Shadow offset
+                                  0.37),   
+                              blurRadius: 16,   
+                              offset: const Offset(0, 5),   
                             ),
                           ]
                         : [],
@@ -143,9 +143,9 @@ class AppBottomNavBar extends StatelessWidget {
                         ? [
                             BoxShadow(
                               color: theme.primaryColor.withOpacity(
-                                  0.37), // Use primary color with opacity
-                              blurRadius: 16, // Blur radius
-                              offset: const Offset(0, 5), // Shadow offset
+                                  0.37),   
+                              blurRadius: 16,   
+                              offset: const Offset(0, 5),   
                             ),
                           ]
                         : [],

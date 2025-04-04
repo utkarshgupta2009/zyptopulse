@@ -1,4 +1,4 @@
-// lib/screens/market_screen.dart (updated)
+  
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/crypto_provider.dart';
